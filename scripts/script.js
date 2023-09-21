@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const burger = document.querySelector('.burger');
     const toggleMenu = () => {
         burger.classList.toggle('toggle');
-        document.body.classList.toggle('overflow');
+        document.body.classList.toggle('no-scroll');
         document.querySelector('nav .links').classList.toggle('show');
     };
     burger.addEventListener('click', () => toggleMenu());
