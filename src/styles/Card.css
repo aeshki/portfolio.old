@@ -1,0 +1,353 @@
+:root {
+    --theme-blue-primary-color: #666FEC;
+    --theme-blue-secondary-color: #737ADA;
+    --theme-blue-light-color: #959CFA;
+    --theme-blue-pur-color: #4C56DD;
+    --theme-yellow-primary-color: #fCBA57;
+    --theme-yellow-secondary-color: #E9CC6C;
+    --theme-yellow-light-color: #FFEEB5;
+    --theme-yellow-pur-color: #F0CB54;
+    --theme-red-primary-color: #FC5757;
+    --theme-red-secondary-color: #E96C6C;
+    --theme-red-light-color: #FFB5B5;
+    --theme-red-pur-color: #F05454;
+    --theme-orange-primary-color: #fcaf57;
+    --theme-orange-secondary-color: #f09165;
+    --theme-orange-light-color: #ffc39c;
+    --theme-orange-pur-color: #f59444;
+    --theme-purple-primary-color: #9157fc;
+    --theme-purple-secondary-color: #a26ce9;
+    --theme-purple-light-color: #c9b5ff;
+    --theme-purple-pur-color: #8354f0;
+    --link-icon-html-border-color: #511D00;
+    --link-icon-html-background-color: #8E3200;
+    --link-icon-css-border-color: #001F37;
+    --link-icon-css-background-color: #003F64;
+    --link-icon-js-border-color: #E8C200;
+    --link-icon-js-background-color: #AA8F00;
+    --link-icon-py-border-color: #ffC108;
+    --link-icon-py-background-color: #CB9800;
+    --link-icon-cpp-border-color: #001C34;
+    --link-icon-cpp-background-color: #184164;
+    --link-icon-cs-border-color: #003717;
+    --link-icon-cs-background-color: #057C36;
+    --link-icon-gds-border-color: #003D68;
+    --link-icon-gds-background-color: #2B5D80;
+    --link-icon-react-border-color: #6e8eac;
+    --link-icon-react-background-color: #4a6f92;
+
+}
+
+main section+section {
+    margin-top: 50px;
+}
+
+.card {
+    max-width: 1028px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0 20px;
+    box-shadow: 2px 3px 5px 0px #00000015
+}
+
+.card .header {
+    width: 100%;
+    padding: 8px 14px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 5px solid #0000006E;
+    background-color: var(--header-color);
+
+}
+
+.card .container {
+    background-color: #2f3244;
+    width: 100%;
+    padding: 25px 20px;
+    border-radius: 0 0 10px 10px;
+
+}
+
+.card .container .box {
+    position: relative;
+    background-color: #20222e;
+    padding: 15px;
+    border: 2px #42486e solid;
+
+}
+
+.card .container .box h2.title {
+    position: absolute;
+    top: -28px;
+    left: 18px;
+    width: fit-content;
+    padding: 4px 12px;
+    background-color: var(--title-background-color);
+    border: 2px solid var(--title-border-color);
+    border-radius: 0 15px 0 15px;
+    font-weight: 700;
+
+}
+
+.card .container .box h2.title+.text {
+    margin-top: 25px;
+}
+
+.card .container .box h2.title+.text:has(h3.title) {
+    margin-top: 50px;
+}
+
+.card .container .box:has(h2.title) {
+    margin-top: 25px;
+}
+
+.card .container .box+.box {
+    margin-top: 25px;
+}
+
+.card .container .box+.box:has(h2.title) {
+    margin-top: 40px;
+}
+
+.card .header .title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    width: 100%;
+
+}
+
+.card .container .box .text {
+    position: relative;
+    background: #44485f;
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+    line-height: 1.8;
+    width: fit-content;
+    max-width: 100%;
+    padding: 10px 20px;
+    border-left: 3px solid var(--text-border-color);
+    border-radius: 0 8px 8px 0;
+
+}
+
+.card .container .text:has(h3.title) {
+    padding-top: 40px;
+    margin-top: 25px;
+
+}
+
+.card .container .text h3.title {
+    position: absolute;
+    top: -22px;
+    left: 15px;
+    background-color: var(--title-background-color);
+    border: 2px solid var(--title-border-color);
+    padding: 5px 8px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    width: max-content;
+    border-radius: 15px 0 15px 0;
+
+}
+
+.card .container .box .text+.text {
+    margin-top: 25px;
+}
+
+.card .container .box .text+.text:has(h3.title) {
+    margin-top: 40px;
+}
+
+
+
+/* FOLLOW DATE */
+.card .box .followDate {
+    background: #3c4053;
+    border-radius: 0 8px 8px 0;
+    padding: 15px;
+    margin-top: 25px;
+
+}
+
+.card .followDate .content {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    background-color: rgb(77, 76, 117);
+    padding-right: 8px;
+    width: fit-content;
+    border-radius: 5px;
+
+}
+
+.card .followDate .content .date {
+    background-color: var(--followDate-background-color);
+    border-right: 3px solid #0000006E;
+    padding: 5px 8px;
+    margin-right: 8px;
+    font-weight: 600;
+    display: inline-block;
+    border-radius: 5px 0 0 5px;
+
+}
+
+.card .followDate .content+.content {
+    margin-top: 20px;
+}
+
+
+
+/* LIST */
+.card .list {
+    padding-inline-start: 25px;
+}
+
+
+
+/* LINK ICON */
+.card .links-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card .link-icon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+
+}
+
+.card .link-icon .title {
+    background-color: #2c3246;
+    border: 2px #5a627c solid;
+    margin-top: 10px;
+    padding: 4px 7px;
+    border-radius: 5px;
+    line-height: normal;
+
+}
+
+.card .link-icon .icon {
+    border: 5px solid var(--border-color);
+    background-color: var(--background-color);
+    border-radius: 50%;
+    padding: 8px;
+
+}
+
+
+
+/* THEME COLOR */
+.card[data-theme-color="blue"] {
+    --header-color: var(--theme-blue-primary-color);
+    --followDate-background-color: var(--theme-blue-primary-color);
+    --title-background-color: var(--theme-blue-secondary-color);
+    --title-border-color: var(--theme-blue-light-color);
+    --text-border-color: var(--theme-blue-pur-color);
+
+}
+
+.card[data-theme-color="red"] {
+    --header-color: var(--theme-red-primary-color);
+    --followDate-background-color: var(--theme-red-primary-color);
+    --title-background-color: var(--theme-red-secondary-color);
+    --title-border-color: var(--theme-red-light-color);
+    --text-border-color: var(--theme-red-pur-color);
+
+}
+
+.card[data-theme-color="purple"] {
+    --header-color: var(--theme-purple-primary-color);
+    --followDate-background-color: var(--theme-purple-primary-color);
+    --title-background-color: var(--theme-purple-secondary-color);
+    --title-border-color: var(--theme-purple-light-color);
+    --text-border-color: var(--theme-purple-pur-color);
+
+}
+
+.card[data-theme-color="yellow"] {
+    --header-color: var(--theme-yellow-primary-color);
+    --followDate-background-color: var(--theme-yellow-primary-color);
+    --title-background-color: var(--theme-yellow-secondary-color);
+    --title-border-color: var(--theme-yellow-light-color);
+    --text-border-color: var(--theme-yellow-pur-color);
+
+}
+
+.card[data-theme-color="orange"] {
+    --header-color: var(--theme-orange-primary-color);
+    --followDate-background-color: var(--theme-orange-primary-color);
+    --title-background-color: var(--theme-orange-secondary-color);
+    --title-border-color: var(--theme-orange-light-color);
+    --text-border-color: var(--theme-orange-pur-color);
+
+}
+
+
+
+/* ICON COLOR */
+.card .links-icon .icon.html {
+    --border-color: var(--link-icon-html-border-color);
+    --background-color: var(--link-icon-html-background-color);
+
+}
+
+.card .links-icon .icon.css {
+    --border-color: var(--link-icon-css-border-color);
+    --background-color: var(--link-icon-css-background-color);
+
+}
+
+.card .links-icon .icon.js {
+    --border-color: var(--link-icon-js-border-color);
+    --background-color: var(--link-icon-js-background-color);
+
+}
+
+.card .links-icon .icon.py {
+    --border-color: var(--link-icon-py-border-color);
+    --background-color: var(--link-icon-py-background-color);
+
+}
+
+.card .links-icon .icon.cpp {
+    --border-color: var(--link-icon-cpp-border-color);
+    --background-color: var(--link-icon-cpp-background-color);
+
+}
+
+.card .links-icon .icon.cs {
+    --border-color: var(--link-icon-cs-border-color);
+    --background-color: var(--link-icon-cs-background-color);
+
+}
+
+.card .links-icon .icon.gds {
+    --border-color: var(--link-icon-gds-border-color);
+    --background-color: var(--link-icon-gds-background-color);
+
+}
+
+.card .links-icon .icon.react {
+    --border-color: var(--link-icon-react-border-color);
+    --background-color: var(--link-icon-react-background-color);
+
+}
+
+
+
+/* LINK BUTTON */
+.card .link {
+    color: #fff2c7;
+
+}
+
+
+
+/* NavLink */
+.card a.active {
+    color: red;
+}
