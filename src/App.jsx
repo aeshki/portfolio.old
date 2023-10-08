@@ -208,7 +208,7 @@ export default function App() {
         </section>
         <section id='projects'>
               <Card
-                themeColor='purple'
+                themeColor='red'
                 headerTitle='Projets personnels'
                 container={PROJECTS.sort((a, b) => b.weight - a.weight).slice(0, 3).map(x => {
                   return {
