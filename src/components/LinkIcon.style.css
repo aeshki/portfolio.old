@@ -1,0 +1,31 @@
+.textIcon > .icon {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px;
+    width: 64px;
+    height: 64px;
+
+}
+
+.textIcon > a {
+    position: relative;
+    color: var(--dark-gray-900);
+    padding-bottom: 8px;
+}
+
+.textIcon > a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 30%;
+    background-color: var(--dark-gray-500);
+    transition: .2s ease-in-out;
+}
+
+.textIcon > a:hover::before {
+    width: 100%;
+    background-color: var(--dark-gray-600);
+}

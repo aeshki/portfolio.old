@@ -1,0 +1,91 @@
+.boxProject {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 35px 50px;
+    gap: 25px;
+    border-radius: 12px;
+    max-width: 758px;
+    height: fit-content;
+    background: var(--dark-gray-100);
+    box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.15);
+}
+
+.boxProject .header > .description {
+    border-left: 3px solid var(--dark-gray-400);
+    color: var(--dark-gray-700);
+    padding-left: 15px;
+}
+
+.boxProject .content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.boxProject .content > .link {
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-gray-600);
+    background-color: var(--dark-gray-100);
+    border: 2px solid var(--dark-gray-500);
+    padding: 10px 16px;
+    transition: .3s ease-in-out;
+}
+
+.boxProject .content > .link:hover {
+    color: var(--dark-gray-800);
+    background-color: var(--dark-gray-400);
+    border-color: transparent;
+}
+
+.boxProject .content > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    padding: 15px;
+    padding-inline-start: 30px;
+    background-color: var(--dark-gray-200);
+    border: 3px solid var(--dark-gray-300);
+    border-radius: 5px;
+}
+
+.boxProject .content > ul li {
+    list-style-type: disc;
+}
+
+.boxProject .tags {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.boxProject .tag {
+    user-select: none;
+    pointer-events: none;
+    display: flex;
+    width: fit-content;
+    padding: 4px 20px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: var(--dark-gray-200);
+    color: var(--dark-gray-700);
+    border: 2px solid var(--dark-gray-300);
+}
+
+/* PHONE */
+@media screen and (max-width: 768px) {
+    .boxProject { padding: 30px 25px; }
+
+    .boxProject .tags { justify-content: center; }
+
+    .boxProject .tag { text-wrap: nowrap; }
+}
